@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>RNG Project</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--<nav>
+            <button id="coin-flip-nav-button" class="button">Coin flip</button>
+            <button id="generate-number-nav-button" class="button">Generate number</button>
+            <button id="select-from-list-nav-button" class="button">Select from list</button>
+        </nav>//-->
+        
+        <!--divs containing the elements for each individual generator-->
+        <div id="coin-flip-div" class="generator-container">
+            <!--content-->
+            <h2>Coinflip</h2>
+            <hr>
+            <button id="coin">Heads</button>
+            <h2>Results:</h2>
+            <div id="Coin-Results" class="hide-show-div">
+                <dl>
+                    <dt>Heads:</dt>
+                    <dd id="Heads-results">0</dd>
+                    <dt>Tails:</dt>
+                    <dd id="Tails-results">0</dd>
+                </dl>
+            </div>
+        </div>
+        <div id="generate-number-div" class="generator-container">
+            <!--content-->
+            <h2>Random Number Generator</h2>
+            <hr>
+            <h3>Enter a number range</h3>
+            <div id="number-range">
+                <div class="end-div">
+                    <label for="low-end">Low end</label><br>
+                    <input type="number" id="low-end" name="low-end" placeholder="0" min="0">
+                </div>
+                <div class="end-div">
+                    <label for="high-end">High end</label><br>
+                    <input type="number" id="high-end" name="high-end" placeholder="0" min="0">
+                </div>
+            </div>
+            <h2 style="text-align: center; margin-top: 20px;">Result:</h2>
+            <h1 id="generated-number-result"></h1>
+            <button id="generate" class="button">Generate</button>
+        </div>
+        <div id="select-from-list-div" class="generator-container" style="height: auto;">
+            <h2>Select from list</h2>
+            <hr>
+            <input type="text" id="add-to-list" placeholder="Enter text for the item you wish to add">
+            <ul id="list-to-pick-from">
+                <li>lorem<button>X</button></li>
+                <li>ipsum<button>X</button></li>
+                <li>dolor<button>X</button></li>
+                <li>sit<button>X</button></li>
+                <li>amet<button>X</button></li>
+            </ul>
+            <button id="select-from-list-button" class="button">Select</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

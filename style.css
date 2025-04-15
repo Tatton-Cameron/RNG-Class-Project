@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 40px;
+    background-color: #222222;
+    color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav {
+    height: 70px;
+    padding: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 20px;
+    text-shadow: 2px 2px 2px #888888;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #dce7e3;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    text-shadow: 2px 2px 2px #555555;
+}
+
+.button:active {
+    background-color: #dce7e3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.generator-container {
+    position: relative;
+    border: 2px solid #999999;
+    border-radius: 12px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text],
+input[type=number] {
+    margin: auto;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 360px;
+    height: 40px;
+    background-color: #555555;
+    border: 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: inherit;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: #999999;
+}
+
+/* number generator */
+
+#low-end,
+#high-end {
+    width: 80px;
+}
+
+#generate {
+    margin-top: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    align-self: center;
+}
+
+#number-range {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+#generate-number-div h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.end-div {
+    text-align: center;
+}
+
+#generated-number-result {
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+/* coin flip */
+#coin {
+    margin: 25px;
+    padding: 50px 50p;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #C0C0C0;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    text-shadow: 2px 2px 2px #555555;
+    border-radius: 100%;
+    width: 250px;
+    height: 200px;
+}
+
+#coin:active {
+    background-color: #C0C0C0;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.hide-show-div {
+    display: none;
+}
+
+/* select from list css */
+
+#list-to-pick-from {
+    float: left;
+    list-style-type: none;
+    margin-left: 8px;
+    height: auto;
+    width: 360px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#list-to-pick-from li {
+    border-radius: 4px;
+    margin: 4px;
+    padding: 4px;
+    height: 20px;
+    background-color: #555555;
+    vertical-align: middle;
+}
+
+#list-to-pick-from li button {
+    border: 0;
+    border-bottom: #cc5555 solid 2px;
+    background-color: #ff7777;
+    color: white;
+    float: right;
+    height: 20px;
+    width: 20px;
+    border-radius: inherit;
+    text-shadow: inherit;
+    vertical-align: middle;
+    align-items: center;
+}
+
+#list-to-pick-from li button:active {
+    border: 0;
+    border-bottom: 0;
+    background-color: #cc5555;
+    color: white;
+    float: right;
+    height: 20px;
+    width: 20px;
+    border-radius: inherit;
+    text-shadow: inherit;
+    vertical-align: middle;
+    align-items: center;
+}
+
+#select-from-list-button {
+    margin: 20%;
+    margin-bottom: 20px;
+}
+
